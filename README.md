@@ -21,7 +21,7 @@ An iOS project focused on presenting dessert-related content. This project is us
 ### 🇺🇸 PresidentList
 A SwiftUI project that displays a list of U.S. presidents. Designed to practice working with structured data, lists, and basic navigation patterns.
 
-
+S
 
 ---
 
