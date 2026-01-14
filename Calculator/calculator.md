@@ -62,18 +62,4 @@ Requirements:
 - Implement scientific functions (sin, cos, power) behind a secondary layout.
 - Add keyboard input support for Mac Catalyst or iPad using hardware keyboards.
 
-## Contributing / Notes for Maintainers
-
-- Keep business logic in `Model/Calculator.swift`; avoid placing arithmetic rules inside views.
-- When adding new button types, update `ButtonType.swift` and ensure the `CalculatorViewModel` maps new actions correctly.
-- Use the centralized styling in `CalculatorButtonStyle.swift` to maintain consistent visuals across platforms.
-
 ---
-
-If you'd like, I can also:
-
-- add unit tests for the calculator model,
-- expand documentation with code-level examples from specific files, or
-- generate a small developer README with run/test commands.
-
-

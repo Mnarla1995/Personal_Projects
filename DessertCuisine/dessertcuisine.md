@@ -99,30 +99,7 @@ Tips for SwiftUI:
 Minimal requirements:
 - macOS with Xcode installed (no command-line build included in this repo).
 
-## Extending the App — Suggestions
 
-- Networking: introduce a `NetworkService` protocol with a real HTTP implementation and a `MockNetworkService` for previews/tests.
-- Caching: add an image cache layer or adopt `URLCache`/third-party caching for thumbnails and detail images.
-- Persistence: add a lightweight `Favorites` store (UserDefaults or Core Data) to bookmark meals.
-- Search & Filters: add search bar and category filters to `DessertListView`.
 
-## Testing Recommendations
 
-- Unit tests for view models (mock network responses, verify state transitions).
-- Snapshot testing for critical views to detect UI regressions.
 
-## Notes & TODOs
-
-- Consider extracting repeated UI pieces (ingredient row, tag chips) into reusable components.
-- Add graceful error UI and retry actions for network failures.
-
-## Contact / Next Steps
-
-If you'd like, I can:
-
-- Add a `NetworkService` scaffold and wire it to `DessertViewModel`.
-- Implement a simple favorites persistence and UI toggle.
-
----
-
-This file summarizes the current code structure and provides concrete next steps for development, testing, and extension. If you want, I can also open specific files and suggest targeted code changes (for example, adding a mock data provider or extending previews).
