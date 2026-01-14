@@ -96,7 +96,7 @@ Tips for SwiftUI:
 2. Select a simulator or device, then build and run (Xcode 14+ recommended).
 3. Use SwiftUI previews for quick UI checks (the project includes preview assets).
 
-Minimal requirements:
+## Minimal requirements:
 - macOS with Xcode installed (no command-line build included in this repo).
 
 

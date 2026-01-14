@@ -57,10 +57,3 @@
 - **Accessibility & localization:**: Ensure VoiceOver labels and localize strings to support additional languages.
 
 ---
-
-**Notes for contributors**
-
-- **Coding style:**: Favor small, testable components. Use `Codable` for parsing and `@Published` + `ObservableObject` for the manager if you want automatic view updates.
-- **Assets:**: Keep image asset names consistent and use SF Symbols when possible to reduce asset bundle size.
-
----
