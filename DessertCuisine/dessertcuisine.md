@@ -22,11 +22,15 @@ This project is structured using **MVVM**:
 
 DessertCuisine is a lightweight iOS app implemented with **SwiftUI** that lets users browse dessert meals and inspect detailed information for each selection. The codebase follows the **MVVM (Model–View–ViewModel)** pattern to keep UI, state, and data responsibilities separated and testable.
 
+---
+
 ## Quick Features
 - Browse a list of dessert meals with images and brief metadata.
 - Tap an item to view rich details (ingredients, instructions, images).
 - Built with reusable SwiftUI views and preview support.
 - Organized around MVVM for clarity and scalability.
+
+---
 
 ## Architecture & Data Flow
 
@@ -39,6 +43,8 @@ View (SwiftUI) ↔ ViewModel (state, business logic) ↔ Model (data structures)
 - Models are plain Swift structs representing API payloads or local data.
 
 This separation makes it straightforward to add features such as caching, offline mode, or unit tests for logic without touching UI code.
+
+---
 
 ## File Map and Responsibilities
 
@@ -61,12 +67,16 @@ This separation makes it straightforward to add features such as caching, offlin
   - [DessertCuisine/DessertCuisine/Assets.xcassets](DessertCuisine/DessertCuisine/Assets.xcassets) — app icons and accent colors.
   - [DessertCuisine/DessertCuisine/Preview Content/Preview Assets.xcassets](DessertCuisine/DessertCuisine/Preview%20Content/Preview%20Assets.xcassets) — assets for SwiftUI previews.
 
+---
+
 ## Models — What to expect
 
 - `CategoryMeals` is typically a compact representation used for list rows: id, title, thumbnail URL, short description.
 - `DetailMeals` contains expanded properties: steps/instructions, ingredient list, measurements, full-size image URLs, and any additional metadata (area, category, tags).
 
 Design tip: Keep decoding logic inside the models (via `Codable` extensions) or in small parsing helpers within the view models so tests can focus on transformation behavior.
+
+---
 
 ## ViewModels — Responsibilities
 
@@ -81,6 +91,8 @@ Design tip: Keep decoding logic inside the models (via `Codable` extensions) or 
 
 Keep view models small and focused; prefer composition (small helpers) over large monolithic classes.
 
+---
+
 ## Views — UI Composition
 
 - `DessertListView` displays a `List` or `LazyVStack` of cells. Each cell should be a small view that accepts a single model (or cell view model) and renders image, title, and subtitle.
@@ -90,16 +102,20 @@ Tips for SwiftUI:
 - Use `@StateObject` for view model ownership, `@ObservedObject` for passing view models into child views.
 - Provide a `PreviewProvider` that injects mock view models for fast UI iteration.
 
+---
+
 ## Building & Running
 
 1. Open the workspace in Xcode: open the Xcode project at [DessertCuisine/DessertCuisine.xcodeproj](DessertCuisine/DessertCuisine.xcodeproj).
 2. Select a simulator or device, then build and run (Xcode 14+ recommended).
 3. Use SwiftUI previews for quick UI checks (the project includes preview assets).
 
+---
+
 ## Minimal requirements:
 - macOS with Xcode installed (no command-line build included in this repo).
 
-
+---
 
 
 
