@@ -6,7 +6,7 @@ This is a simple calculator app implemented using SwiftUI and the MVVM (Model-Vi
 
 --- 
 
-## Key Features
+## Key Features:
 
 - Basic arithmetic: addition, subtraction, multiplication, division
 - Clear and responsive touch-friendly UI
@@ -15,7 +15,7 @@ This is a simple calculator app implemented using SwiftUI and the MVVM (Model-Vi
 
 ---
 
-## Project Structure
+## Project Structure:
 
 The project uses a straightforward folder layout. Important files and their responsibilities:
 
@@ -30,7 +30,7 @@ The project uses a straightforward folder layout. Important files and their resp
 
 ---
 
-## Architecture and Design Notes
+## Architecture and Design Notes:
 
 - Pattern: MVVM — keeps UI declarative and stateless while the view model manages user-driven state.
 - Single-responsibility: model focuses on arithmetic rules, view model on input handling, views on layout.
@@ -39,7 +39,7 @@ The project uses a straightforward folder layout. Important files and their resp
 
 ---
 
-## How to Run (local)
+## How to Run (local):
 
 1. Open the Xcode project at `Calculator/Calculator.xcodeproj`.
 2. Select the `Calculator` target and choose a simulator or device.
@@ -54,7 +54,7 @@ The project uses a straightforward folder layout. Important files and their resp
 
 ---
 
-## User Interaction / UI Behavior
+## User Interaction / UI Behavior:
 
 - Tap digit buttons to build the current operand.
 - Tap an operation (÷, ×, −, +) to queue an operation; subsequent digit input forms the second operand.
@@ -64,14 +64,14 @@ The project uses a straightforward folder layout. Important files and their resp
 
 ---
 
-## Tests & Validation
+## Tests & Validation:
 
 - Unit tests can be added around `Model/Calculator.swift` to validate operator precedence, repeated equals behavior, and edge cases (division by zero, large numbers, decimal precision).
 - View model tests should assert correct display output for typical input sequences.
 
 ---
 
-## Extension Ideas
+## Extension Ideas:
 
 - Add decimal point support and format the display for thousands separators.
 - Add a history view to show previous calculations.
